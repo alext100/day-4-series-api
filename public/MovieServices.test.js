@@ -59,3 +59,26 @@ describe("Given a updateSerie function", () => {
     });
   });
 });
+
+describe("Given a createSerie function", () => {
+  describe("When it recives an object", () => {
+    test("Then it should add this object to series API and return the new id of this object", () => {
+      const serie = {
+        "id": 26,
+        "name": "Atypical",
+        "creator": "Robia Rashid",
+        "year": 2017,
+        "poster": "https://www.cine.com/media/series/2711.jpg",
+        "watched": true,
+        "score": 0,
+        "emmies": 0,
+      };
+      const getSeries = new MoviesServices();
+      const idOfReturnedobject = getSeries.createSerie(serie).id;
+
+      const responsedArrayLength = getSeries.getSeries().length;
+
+      return expect(idOfReturnedobject).toBe(responsedArrayLength);
+    });
+  });
+});
