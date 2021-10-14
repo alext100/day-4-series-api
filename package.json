@@ -1,0 +1,16 @@
+{
+  "name": "series-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server series.json --port 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
