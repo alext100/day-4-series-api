@@ -1,3 +1,12 @@
-import MoviesServices from "./MovieServices.js";
+import MovieServices from "./MovieServices.js";
+import Component from "./Component.js";
 
-const getMoviesSeries = new MoviesServices();
+const parentContainer = document.querySelector(".container");
+
+// const getMoviesSeries = new MovieServices();
+const formComponent = new Component(parentContainer);
+
+// formComponent.selectContainer();
+// formComponent.generateForm();
+
+console.log(formComponent);

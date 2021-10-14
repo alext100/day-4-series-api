@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@babel/eslint-parser": "^7.15.8",
     "json-server": "^0.16.3"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.15.8",
     "@babel/plugin-transform-modules-commonjs": "^7.15.4",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
