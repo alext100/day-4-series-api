@@ -27,3 +27,35 @@ describe("Given a deleteSerie function", () => {
     });
   });
 });
+
+describe("Given a updateSerie function", () => {
+  describe("When it recives id propertie of an object and this object", () => {
+    test("Then it should return this object with id as a propertie", () => {
+      const expected = {
+        "id": 4,
+        "name": "Atypical",
+        "creator": "Robia Rashid",
+        "year": 2017,
+        "poster": "https://www.cine.com/media/series/2711.jpg",
+        "watched": true,
+        "score": 0,
+        "emmies": 0
+      };
+      const serie = {
+        "name": "Atypical",
+        "creator": "Robia Rashid",
+        "year": 2017,
+        "poster": "https://www.cine.com/media/series/2711.jpg",
+        "watched": true,
+        "score": 0,
+        "emmies": 0
+      };
+      const id = 4;
+
+      const getSeries = new MoviesServices();
+      const result = getSeries.updateSerie(id, serie);
+
+      return expect(result).resolves.toEqual(expected);
+    });
+  });
+});
